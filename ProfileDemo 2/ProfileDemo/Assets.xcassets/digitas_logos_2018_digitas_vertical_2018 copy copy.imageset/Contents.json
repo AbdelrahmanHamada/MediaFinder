@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "digitas_logos_2018_digitas_vertical_2018 copy copy.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

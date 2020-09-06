@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="moviesCellId" rowHeight="97" id="KGk-i7-Jjw" customClass="MoviesCell" customModule="MediaFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kku-ES-qZ9">
+                        <rect key="frame" x="114" y="31.5" width="299" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGd-a8-oQg">
+                                <rect key="frame" x="0.0" y="0.0" width="299" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-vU-i6o">
+                                <rect key="frame" x="0.0" y="20.5" width="299" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.video" translatesAutoresizingMaskIntoConstraints="NO" id="9FM-GM-2bm">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uGd-a8-oQg" secondAttribute="trailing" constant="1" id="3yU-9M-P1W"/>
+                    <constraint firstItem="kku-ES-qZ9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CDC-37-pN4"/>
+                    <constraint firstItem="kku-ES-qZ9" firstAttribute="leading" secondItem="9FM-GM-2bm" secondAttribute="trailing" constant="29" id="IeN-Vj-BIr"/>
+                    <constraint firstItem="9FM-GM-2bm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-6" id="V9H-Mu-d2r"/>
+                    <constraint firstAttribute="trailing" secondItem="0ei-vU-i6o" secondAttribute="trailing" constant="1" id="XaP-ug-DJf"/>
+                    <constraint firstItem="9FM-GM-2bm" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.876289" constant="-3.3000000001948138e-05" id="ZhO-0D-l7E"/>
+                    <constraint firstItem="9FM-GM-2bm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gha-to-osB"/>
+                    <constraint firstItem="9FM-GM-2bm" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="16:16" constant="-12" id="wAy-9H-8W2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="9FM-GM-2bm" id="z85-2k-KLj"/>
+                <outlet property="longDescription" destination="0ei-vU-i6o" id="5gb-1F-Zr8"/>
+                <outlet property="movieName" destination="uGd-a8-oQg" id="fN8-w4-5ma"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="57"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="questionmark.video" width="128" height="83"/>
+    </resources>
+</document>
